@@ -13,6 +13,11 @@ export default function Home() {
                     <a href="/create/store">Create your Store</a>
                 </div>
             </header>
+            <main className={styles.homeMainContent}>
+                <div className={styles.intro}>
+                    <p>HNDS is the ultimate platform for creators, entrepreneurs, and individuals to sell digital content, physical products, and subscriptions with ease. Customize your storefront, connect directly with your audience, and take control of your sales—all in your own HNDS.</p>
+                </div>
+            </main>
         </div>
     )
 }

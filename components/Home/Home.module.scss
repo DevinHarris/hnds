@@ -41,7 +41,22 @@
             }
         }
 
-       
+    }
 
+    .homeMainContent {
+
+        .intro {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1.6;
+            width: 100%;
+
+            p {
+                font-weight: 600;
+                max-width: 50rem;
+            }
+            
+        }
     }
 }
