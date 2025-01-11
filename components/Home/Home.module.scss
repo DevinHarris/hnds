@@ -1,0 +1,47 @@
+.home {
+
+    .homeHeader {
+        align-items: center;
+        display: flex;
+        height: 25rem;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1.6;
+        width: 100%;
+
+        .headerHeading {
+
+            font-size: 3rem;
+            font-weight: 600;
+        }
+
+        .headerPrimaryTagLine {
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        .headerSecondaryTagLine {
+            font-size: 1.2rem;
+            
+        }
+
+        .actionButtons {
+            margin-block-start: 2rem;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            a {
+                background-color: hsl(var(--accent-foreground));
+                border-radius: 10px;
+                color: #fff;
+                padding-block: 1rem;
+                padding-inline: 1.5rem;
+                
+            }
+        }
+
+       
+
+    }
+}
