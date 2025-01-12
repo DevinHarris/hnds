@@ -1,4 +1,5 @@
 
+import Link from 'next/link';
 import styles from './Home.module.scss';
 
 export default function Home() {
@@ -6,8 +7,9 @@ export default function Home() {
         <div className={styles.home}>
             <header className={styles.homeHeader}>
                 <h1 className={styles.headerHeading}>Sell Anything. Launch Everything.</h1>
-                <p className={styles.headerPrimaryTagLine}>Creators, Sellers, Merchants, Hobbists, Dreamers and everything in between.</p>
+                <p className={styles.headerPrimaryTagLine}>For Creators, Sellers, Merchants, Hobbists, Dreamers and everything in between.</p>
                 <p className={styles.headerSecondaryTagLine}>Start selling in <strong>seconds</strong>.</p>
+                <p>Zero fees, <Link className={styles.headerPlansLink} href="/plans">one flat monthly rate with options.</Link> </p>
                 <div className={styles.actionButtons}>
                     <a href="/login">Login</a>
                     <a href="/create/store">Create your Store</a>

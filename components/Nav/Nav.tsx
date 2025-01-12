@@ -10,7 +10,7 @@ export default function Nav() {
         <nav className={styles.nav}>
             <h1>
                 <Link href="/">HNDS</Link>
-                <HeartHandshake size={20} />
+                <HeartHandshake style={{ color: "turquoise"}} size={20} />
             </h1>
         </nav>
     )

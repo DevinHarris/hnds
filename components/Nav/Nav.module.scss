@@ -1,6 +1,7 @@
 .nav {
     // height: 3rem;
     background-color: hsl(0deg, 100%, 100%);
+    color: hsl(var( --black));
     position: fixed;
     top: 0;
     left: 0;
@@ -15,5 +16,9 @@
         display: flex;
         gap: 5px;
         justify-content: center;
+
+        a {
+            color: hsl(var( --black));
+        }
     }
 }
