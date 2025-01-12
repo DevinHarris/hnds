@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from 'next/link';
 import TextTransition, { presets } from "react-text-transition";
 import styles from './Home.module.scss';
+import ToastBanner from "@/components/ToastBanner";
 
 // Dynamically change background image based on user selection
 // add "I'm "creator | business owner | hobbist" -> Get started
@@ -12,7 +13,7 @@ export default function Home() {
     
     const [index, setIndex] = useState(0);
     
-    const TEXTS = ["Creator", "Small Business Owner", "Streamer", "Fashion Designer", "Preserver", "Exclusive Content Creator", "YouTuber", "Fitness Creator",  "Hobbist", "Food Enthiustist", "Collector", "Producer", "Animator", "Logo Designer", "Course Creator", "Freelancers", "Crafter", "Entreprenuer", "Lawncare Specialist", "Painter", "Programmer", "Solopreneur", "Dabbler", "Weekend Projecter"];
+    const TEXTS = ["a Creator", "a Small Business Owner", "a Streamer", "a Fashion Designer", "a Dropshipper", "a Preserver", "an Exclusive Content Creator", "a YouTuber", "a Fitness Creator",  "a Hobbist", "a Food Enthiustist", "a Collector", "a Producer", "an Animator", "a Logo Designer", "a Course Creator", "a Freelancers", "a Crafter", "an Entreprenuer", "a Lawncare Specialist", "a Painter", "a Programmer", "a Solopreneur", "a Dabbler", "a Weekend Projecter"];
     
     useEffect(() => {
         const intervalId = setInterval(() => setIndex((index) => index + 1),
@@ -23,16 +24,19 @@ export default function Home() {
 
     return (
         <div className={styles.home}>
+            <ToastBanner>
+                <span>Absolutely <strong>free</strong> for your first 3 sales. <Link href="/signup"><strong>Learn more.</strong></Link></span>
+            </ToastBanner>
             
             <header className={styles.homeHeader} style={{ background: `url("/images/bg-5.jpg") center center no-repeat`, backgroundSize: "cover" }}>
-            <div className={styles.creatorText}>
-                  <h2>I'm a <TextTransition className={styles.createTextAnimation} springConfig={presets.gentle}>{TEXTS[index % TEXTS.length]}.</TextTransition></h2>
+                <div className={styles.creatorText}>
+                  <h2>I'm <Link href="/signup"><TextTransition className={styles.createTextAnimation} springConfig={presets.gentle}>{TEXTS[index % TEXTS.length]}.</TextTransition></Link></h2>
                 </div>
                 <h1 className={styles.headerHeading}>Sell Anything. Launch Everything. Keep all your earnings.</h1>
                 <p className={styles.headerPrimaryTagLine}>For Creators, Sellers, Merchants, Hobbists, Dreamers and everything in between.</p>
                 <p className={styles.headerSecondaryTagLine}>Start selling in <strong>seconds</strong>. <Link className={styles.headerPlansLink} href="/plans">Zero fees, one flat monthly price.</Link></p>
        
-                <p><strong>Free for your first 3 sales.</strong></p>
+               
               
             </header>
             <main className={styles.homeMainContent}>

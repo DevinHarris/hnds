@@ -21,6 +21,11 @@ export default function middleware(request: NextRequest) {
         return NextResponse.rewrite(url);
     }
 
+    if (subdomain === "creator") {
+        url.pathname = `/seller${url.pathname}`;
+        return NextResponse.rewrite(url);
+    }
+
 
 
     return NextResponse.next();

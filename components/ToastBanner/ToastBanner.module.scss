@@ -1,0 +1,33 @@
+.toastBanner {
+    align-items: center;
+    background-color: hsl(var(--white));
+    display: flex;
+    justify-content: center;
+    padding-block: 10px;
+    padding-inline: 10px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+
+    span {
+        font-size: 0.9rem;
+        // font-weight: 600;
+
+    }
+
+    .closeBtn {
+        position: absolute;
+        right: 50px;
+        top: 13px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+
+        :hover {
+            transform: translateY(-3rem);
+            -webkit-transform: translateY(-3rem);
+        }
+    }
+
+}
