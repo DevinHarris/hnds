@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import { HeartHandshake } from 'lucide-react'
+import { HeartHandshake, CircleUserRound  } from 'lucide-react'
 
 import styles from './Nav.module.scss'
 
@@ -25,7 +25,7 @@ export default function Nav() {
                     <Link href="/about">About</Link>
                 </li>
                 <li>
-                    <Link href="/login">Creator Login</Link>
+                    <Link href="/login">Login</Link>
                 </li>
             </ul>
         </nav>

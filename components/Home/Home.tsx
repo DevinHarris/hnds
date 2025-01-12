@@ -1,21 +1,39 @@
+"use client"
 
+import { useState, useEffect } from "react";
 import Link from 'next/link';
+import TextTransition, { presets } from "react-text-transition";
 import styles from './Home.module.scss';
 
 // Dynamically change background image based on user selection
 // add "I'm "creator | business owner | hobbist" -> Get started
 
 export default function Home() {
+    
+    const [index, setIndex] = useState(0);
+    
+    const TEXTS = ["Creator", "Small Business Owner", "Streamer", "Fashion Designer", "Preserver", "Exclusive Content Creator", "YouTuber", "Fitness Creator",  "Hobbist", "Food Enthiustist", "Collector", "Producer", "Animator", "Logo Designer", "Course Creator", "Freelancers", "Crafter", "Entreprenuer", "Lawncare Specialist", "Painter", "Programmer", "Solopreneur", "Dabbler", "Weekend Projecter"];
+    
+    useEffect(() => {
+        const intervalId = setInterval(() => setIndex((index) => index + 1),
+        4000,);
+
+        return () => clearTimeout(intervalId)
+    }, [index])
+
     return (
         <div className={styles.home}>
-            <header className={styles.homeHeader} style={{ background: `url("/images/bg-4.jpg") center center no-repeat`, backgroundSize: "cover" }}>
-                <h1 className={styles.headerHeading}>Sell Anything. Launch Everything.</h1>
-                <p className={styles.headerPrimaryTagLine}>For Creators, Sellers, Merchants, Hobbists, Dreamers and everything in between.</p>
-                <p className={styles.headerSecondaryTagLine}>Start selling in <strong>seconds</strong>.</p>
-                <p>Zero fees, <Link className={styles.headerPlansLink} href="/plans">one flat monthly rate with options.</Link> </p>
-                <div className={styles.actionButtons}>
-                  
+            
+            <header className={styles.homeHeader} style={{ background: `url("/images/bg-5.jpg") center center no-repeat`, backgroundSize: "cover" }}>
+            <div className={styles.creatorText}>
+                  <h2>I'm a <TextTransition className={styles.createTextAnimation} springConfig={presets.gentle}>{TEXTS[index % TEXTS.length]}.</TextTransition></h2>
                 </div>
+                <h1 className={styles.headerHeading}>Sell Anything. Launch Everything. Keep all your earnings.</h1>
+                <p className={styles.headerPrimaryTagLine}>For Creators, Sellers, Merchants, Hobbists, Dreamers and everything in between.</p>
+                <p className={styles.headerSecondaryTagLine}>Start selling in <strong>seconds</strong>. <Link className={styles.headerPlansLink} href="/plans">Zero fees, one flat monthly price.</Link></p>
+       
+                <p><strong>Free for your first 3 sales.</strong></p>
+              
             </header>
             <main className={styles.homeMainContent}>
                 <div className={styles.intro}>
@@ -36,11 +54,11 @@ export default function Home() {
                     </div>
                 </div>
                 <div className={styles.contentSectionContainer}>
-                    <div className={styles.contentSection} style={{ background: `url("/images/bg-11.jpg") center center no-repeat`, backgroundSize: 'cover', }}>
+                    <div className={styles.contentSection} style={{ paddingInline: "3rem", background: `url("/images/bg-11.jpg") center center no-repeat`, backgroundSize: 'cover', }}>
                             
                              <div className={styles.contentSectionContent}>
                                 <h1>Effortless and Seamless.</h1>
-                                <p>HNDS takes care of the hard parts so you can focus on what matters most—your business. Built for creators, entrepreneurs, and everyone in between.</p>
+                                <p><strong>HNDS</strong> takes care of the hard parts so you can focus on what matters most—your business. Built for creators, entrepreneurs, and everyone in between.</p>
                             </div>
                     </div>
                 </div>

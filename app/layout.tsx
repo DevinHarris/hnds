@@ -12,7 +12,7 @@ const openSans = Open_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "HNDS: Empowering Everyone to Sell What Matters",
+  title: "HANDS: Empowering Everyone to Sell What Matters.",
   description: "HNDS is the ultimate platform for creators, entrepreneurs, and individuals to sell digital content, physical products, and subscriptions with ease. Customize your storefront, connect directly with your audience, and take control of your sales—all in your own HNDS.",
 };
 
