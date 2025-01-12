@@ -13,7 +13,7 @@ export default function Home() {
     
     const [index, setIndex] = useState(0);
     
-    const TEXTS = ["a Creator", "a Small Business Owner", "a Streamer", "a Fashion Designer", "a Dropshipper", "a Preserver", "an Exclusive Content Creator", "a YouTuber", "a Fitness Creator",  "a Hobbist", "a Food Enthiustist", "a Collector", "a Producer", "an Animator", "a Logo Designer", "a Course Creator", "a Freelancers", "a Crafter", "an Entreprenuer", "a Lawncare Specialist", "a Painter", "a Programmer", "a Solopreneur", "a Dabbler", "a Weekend Projecter"];
+    const TEXTS = ["a Creator", "a Small Business Owner", "a Streamer", "a Fashion Designer", "a Dropshipper", "a Preserver", "a Beekeeper", "an Exclusive Content Creator", "a YouTuber", "a Fitness Creator",  "a Hobbist",  "a Food Enthiustist", "a Director", "a Collector", "a Producer", "an Animator", "a Logo Designer", "a Course Creator", "a Freelancers", "a Crafter", "an Entreprenuer", "a Lawncare Specialist", "a Painter", "a Programmer", "a Solopreneur", "a Dabbler", "a Weekend Projecter"];
     
     useEffect(() => {
         const intervalId = setInterval(() => setIndex((index) => index + 1),
