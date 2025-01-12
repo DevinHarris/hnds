@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Source_Sans_3 } from "next/font/google";
 import Nav from "@/components/Nav";
-import "./globals.scss";
+import "@/components/Nav/Nav.module.scss"
+import "@/app/globals.scss";
 
 
 const sourceSansPro = Source_Sans_3({
