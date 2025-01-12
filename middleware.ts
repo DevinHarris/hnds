@@ -21,10 +21,6 @@ export default function middleware(request: NextRequest) {
         return NextResponse.rewrite(url);
     }
 
-    if (subdomain && subdomain !== "www") {
-        request.headers.set("x-user-subdomain", subdomain);
-        return NextResponse.redirect(new URL(`/users/${subdomain}`, request.url))
-    }
 
 
     return NextResponse.next();

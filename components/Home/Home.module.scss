@@ -3,16 +3,18 @@
     .homeHeader {
         align-items: center;
         display: flex;
-        height: 25rem;
+        color: hsl(var(--white));
+        height: 65rem;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-end;
         line-height: 1.6;
+        padding-block-end: 7rem;
         width: 100%;
 
         .headerHeading {
 
             font-size: 3rem;
-            font-weight: 600;
+            // font-weight: 600;
         }
 
         .headerPrimaryTagLine {
@@ -52,17 +54,70 @@
     .homeMainContent {
 
         .intro {
+            background-color: var(--baby-blueish);
+            color: var(--goldish);
+            height: 60rem;
             display: flex;
             align-items: center;
             justify-content: center;
             line-height: 1.6;
+
             width: 100%;
 
             p {
-                font-weight: 600;
+                font-weight: 500;
                 max-width: 50rem;
             }
             
         }
+    }
+
+    .contentSectionContainer {
+
+        height: 60rem;
+        width: 100%;
+        .contentSection {
+            height: 100%;
+            width: 100%;
+
+            .contentSectionVideo {
+                align-items: flex-end;
+                position: relative;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                
+                video {
+                    height: 100%;
+                position: absolute;
+                object-fit: cover;
+                width: 100%;
+                z-index: 0;
+                }
+            }
+
+            .contentSectionContent {
+                color: hsl(var(--white));
+                padding-block: 3rem;
+                position: relative;
+                
+                z-index: 1;
+
+                h1 {
+                    font-size: 5rem;
+                    // font-weight: 500;
+                }
+
+                p {
+                    max-width: 40rem;
+                    // font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .contentSection {
+        padding-inline: 3rem;
     }
 }

@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { Source_Sans_3 } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import Nav from "@/components/Nav";
 import "@/components/Nav/Nav.module.scss"
 import "@/app/globals.scss";
 
 
-const sourceSansPro = Source_Sans_3({
-  variable: "--font-source-sans-3",
+
+const openSans = Open_Sans({
+  variable: "--font-open-sans",
   subsets: ["latin"]
 })
 
@@ -23,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${sourceSansPro.variable}  antialiased`}
+        className={`${openSans.variable}  antialiased`}
       >
         <Nav />
         <div className="app-wrapper">

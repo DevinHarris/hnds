@@ -36,6 +36,8 @@ body {
     --white: 0 100% 100%;
     --black: 0 0% 0%;
     --text-accent: hsl(223, 83%, 59%);
+    --baby-blueish: hsl(212.54deg, 36.65%, 68.43%);
+    --goldish: hsl(32.83deg 29.94% 34.71%);
   }
   .dark {
     --background: 222.2 84% 4.9%;
@@ -67,10 +69,11 @@ body {
 
 html, body {
   height: 100%;
+  line-height: 1.5;
 }
 
 .app-wrapper {
-  margin-block-start: 4rem;
+  // margin-block-start: 4rem;
 }
 
 
