@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import { HeartHandshake, CircleUserRound  } from 'lucide-react'
+import { HeartHandshake  } from 'lucide-react'
 
 import styles from './Nav.module.scss'
 
