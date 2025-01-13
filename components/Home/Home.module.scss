@@ -121,6 +121,31 @@
                 }
             }
         }
+
+        .pricingSection {
+            align-items: center;
+            display: flex;
+            height: auto;
+            flex-direction: column;
+            padding-block: 4rem;
+            padding-inline: 4rem;
+            background-color: var(--white);
+            justify-content: center;
+
+            
+            .pricingCards {
+            //    margin-bottom: auto;
+                display: flex;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+
+            .pricingSectionContent {
+                
+             color: hsl(var(--greyish));
+            }
+
+        }
     }
 
     
