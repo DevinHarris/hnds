@@ -164,6 +164,36 @@ export default function Home() {
                             </div>
                     </div>
                 </div>
+                <div className={styles.contentSectionContainer}>
+                <div className={styles.contentSectionContainer}>
+                    <div className={styles.contentSection}>
+                            <div className={styles.contentSectionVideo}>
+                                <video loop muted autoPlay>
+                                    <source src="/images/vid-bg-6.mp4" type='video/mp4'></source>
+                                </video>
+                                <div className={styles.contentSectionContent}>
+                                <h1>Discover and Support Creators Effortlessly</h1>
+                                <p>HNDS connects you to creators offering unique, high-quality digital content. Support your favorite creators directly and easily, while enjoying exclusive perks like early access, special deals, and personalized content.</p>
+                            </div>
+                            </div>
+                           
+                    </div>
+                </div>
+
+
+                </div>
+                <div className={styles.userBenefitsSection}>
+                    {/* add tool tips for each */}
+                    <h2>Multiple Payment Options, Maximum Flexibility</h2>
+                    <p>We understand that everyone has different preferences when it comes to payments. That’s why HNDS offers a variety of secure payment options:</p>
+                    <ul>
+                        <li><strong>Stripe-powered payments:</strong> for fast, secure transactions.</li>
+                        <li><strong>Standard methods:</strong> We support all major credit cards.</li>
+                        <li><strong>Digital wallets:</strong> PayPal, Apple Pay, Google Pay.</li>
+                        <li><strong>Buy Now, Pay Later:</strong> Pay over time with options like AfterPay, Klarna, and Zip.</li>
+                        <li><strong>Privacy.com payments:</strong> Maintain full privacy by generating virtual cards for your purchases.</li>
+                    </ul>
+                </div>
             </main>
         </div>
     )
